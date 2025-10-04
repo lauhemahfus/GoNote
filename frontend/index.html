@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoNote - Your Personal Note Taking App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="landing-container">
+        <nav class="navbar">
+            <div class="nav-content">
+                <div class="logo">GoNote</div>
+                <div class="nav-links">
+                    <a href="login.html" class="btn-secondary">Login</a>
+                    <a href="signup.html" class="btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Your Thoughts, Organized</h1>
+                <p class="hero-subtitle">
+                    Capture ideas, organize notes, and boost productivity with GoNote. 
+                    Powered by AI to help you write better and faster.
+                </p>
+                <div class="hero-buttons">
+                    <a href="signup.html" class="btn-large btn-primary">Get Started Free</a>
+                    <a href="#features" class="btn-large btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-illustration">
+                <div class="note-card card-1">
+                    <div class="note-header"></div>
+                    <div class="note-line"></div>
+                    <div class="note-line"></div>
+                    <div class="note-line short"></div>
+                </div>
+                <div class="note-card card-2">
+                    <div class="note-header"></div>
+                    <div class="note-line"></div>
+                    <div class="note-line"></div>
+                </div>
+                <div class="note-card card-3">
+                    <div class="note-header"></div>
+                    <div class="note-line"></div>
+                    <div class="note-line short"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2 class="section-title">Everything You Need</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon icon-1">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>Fast & Efficient</h3>
+                    <p>Lightning-fast performance with Redis caching ensures your notes load instantly</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon icon-2">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M9 3v18M3 9h18M3 15h18"/>
+                        </svg>
+                    </div>
+                    <h3>Smart Organization</h3>
+                    <p>Keep all your notes organized with easy-to-use categorization and search</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon icon-3">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <h3>AI-Powered Summaries</h3>
+                    <p>Generate instant summaries of your notes with integrated Gemini AI</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon icon-4">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                        </svg>
+                    </div>
+                    <h3>Secure & Private</h3>
+                    <p>Your data is encrypted and secured with JWT authentication</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Ready to Get Started?</h2>
+            <p>Join thousands of users who trust GoNote for their note-taking needs</p>
+            <a href="signup.html" class="btn-large btn-primary">Create Free Account</a>
+        </section>
+
+        <footer class="footer">
+            <p>2025 GoNote. Built with Go and passion.</p>
+        </footer>
+    </div>
+</body>
+</html>

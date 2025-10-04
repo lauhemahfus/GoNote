@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - GoNote</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <nav class="dashboard-nav">
+            <div class="nav-content">
+                <div class="logo">GoNote</div>
+                <button id="logoutBtn" class="btn-secondary">Logout</button>
+            </div>
+        </nav>
+
+        <div class="dashboard-content">
+            <div class="dashboard-header">
+                <h1>My Notes</h1>
+                <button id="newNoteBtn" class="btn-primary">Create Note</button>
+            </div>
+
+            <div id="notesGrid" class="notes-grid"></div>
+            
+            <div id="loadMoreContainer" class="load-more-container">
+                <button id="loadMoreBtn" class="btn-secondary">Load More</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="noteModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Create Note</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="noteForm">
+                    <div class="form-group">
+                        <label for="noteTitle">Title</label>
+                        <input type="text" id="noteTitle" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="noteContent">Content</label>
+                        <textarea id="noteContent" rows="10"></textarea>
+                    </div>
+                    <div id="noteError" class="error-message"></div>
+                    <div class="modal-actions">
+                        <button type="button" id="getSummaryBtn" class="btn-secondary">Get AI Summary</button>
+                        <div class="modal-actions-right">
+                            <button type="button" class="modal-cancel btn-secondary">Cancel</button>
+                            <button type="submit" class="btn-primary">Save Note</button>
+                        </div>
+                    </div>
+                </form>
+                <div id="summarySection" class="summary-section" style="display: none;">
+                    <h3>AI Summary</h3>
+                    <div id="summaryContent" class="summary-content"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="deleteModal" class="modal">
+        <div class="modal-content modal-small">
+            <div class="modal-header">
+                <h2>Delete Note</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to delete this note? This action cannot be undone.</p>
+                <div class="modal-actions">
+                    <button type="button" class="modal-cancel btn-secondary">Cancel</button>
+                    <button type="button" id="confirmDeleteBtn" class="btn-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

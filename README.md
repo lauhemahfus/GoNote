@@ -84,3 +84,10 @@ Open your browser and visit:
 ```
 http://localhost:8080
 ```
+
+
+## Screenshots
+
+<img width="1333" height="856" alt="image" src="https://github.com/user-attachments/assets/58a105a1-3969-4ba8-a869-fe40d59dbee4" />
+<img width="1439" height="859" alt="image" src="https://github.com/user-attachments/assets/5a158e66-e874-480a-8931-722d412e0501" />
+
